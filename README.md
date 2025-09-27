@@ -5,9 +5,16 @@ Modern cryptocurrency logo designs for HM Crypto brand.
 ## 📁 Files Included
 
 ### Logo Designs (SVG Format)
+
+#### Standard Collection
 - **hm-crypto-logo-1.svg** - Blockchain Hexagon Design (Blue gradient with hexagonal patterns)
 - **hm-crypto-logo-2.svg** - Circuit Minimalist Design (Purple-pink gradient with circuit patterns)
 - **hm-crypto-logo-3.svg** - Premium Coin Design (Gold gradient with 3D coin effects)
+
+#### Premium Collection
+- **hm-crypto-logo-4.svg** - Holographic Glass Design (Animated rainbow gradients with glass morphism)
+- **hm-crypto-logo-5.svg** - Neon Cyberpunk Design (Glowing neon effects with glitch animations)
+- **hm-crypto-logo-6.svg** - Liquid Metal Aurora Design (Morphing chrome with aurora borealis)
 
 ### Tools & Preview
 - **index.html** - Visual preview of all logo designs
@@ -16,25 +23,50 @@ Modern cryptocurrency logo designs for HM Crypto brand.
 
 ## 🎨 Design Features
 
-### Design 1: Blockchain Hexagon
+### Standard Collection
+
+#### Design 1: Blockchain Hexagon
 - Hexagonal frame representing blockchain structure
 - Blue gradient colors (trust & technology)
 - Connected nodes symbolizing decentralized network
 - Geometric patterns for modern tech feel
 
-### Design 2: Circuit Minimalist
+#### Design 2: Circuit Minimalist
 - Sleek minimalist approach
 - Circuit board patterns in background
 - Purple to pink gradient for modern aesthetic
 - Animated glowing elements (in SVG)
 - Perfect for digital platforms
 
-### Design 3: Premium Coin
+#### Design 3: Premium Coin
 - Cryptocurrency coin style
 - Gold gradients for premium feel
 - 3D shadow and metallic effects
 - Professional and valuable appearance
 - Ideal for financial/trading platforms
+
+### Premium Collection
+
+#### Design 4: Holographic Glass
+- Glass morphism with blur effects
+- Animated holographic rainbow gradients
+- 3D layered depth effects
+- Floating particle animations
+- Ultra-modern premium aesthetic
+
+#### Design 5: Neon Cyberpunk
+- Intense neon glow effects
+- Flickering neon tube animations
+- Digital rain and glitch effects
+- Scanline overlays
+- Futuristic cyber grid patterns
+
+#### Design 6: Liquid Metal Aurora
+- Morphing liquid metal surfaces
+- Aurora borealis color animations
+- Chrome metallic reflections
+- Liquid distortion effects
+- Premium sophisticated appearance
 
 ## 🚀 Quick Start
 
@@ -90,6 +122,9 @@ Modern cryptocurrency logo designs for HM Crypto brand.
 | Design 1 (Blockchain) | Tech platforms, DeFi apps, blockchain services |
 | Design 2 (Circuit) | Modern apps, digital wallets, trading platforms |
 | Design 3 (Coin) | Exchanges, investment platforms, premium services |
+| Design 4 (Holographic) | Next-gen crypto, NFT platforms, metaverse projects |
+| Design 5 (Cyberpunk) | Gaming tokens, futuristic DApps, tech-forward brands |
+| Design 6 (Liquid Metal) | Premium exchanges, institutional crypto, luxury DeFi |
 
 ## 📄 License
 

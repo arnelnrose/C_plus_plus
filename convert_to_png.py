@@ -99,7 +99,10 @@ def main():
     svg_files = [
         "hm-crypto-logo-1.svg",
         "hm-crypto-logo-2.svg",
-        "hm-crypto-logo-3.svg"
+        "hm-crypto-logo-3.svg",
+        "hm-crypto-logo-4.svg",
+        "hm-crypto-logo-5.svg",
+        "hm-crypto-logo-6.svg"
     ]
     
     # Output directory for PNG files
