@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Design 4: Premium Holographic Glass Morphism HM Logo -->
+  <defs>
+    <!-- Holographic gradient -->
+    <linearGradient id="holographic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF006E;stop-opacity:1">
+        <animate attributeName="stop-color" values="#FF006E;#8338EC;#3A86FF;#06FFB4;#FFBE0B;#FF006E" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="25%" style="stop-color:#8338EC;stop-opacity:1">
+        <animate attributeName="stop-color" values="#8338EC;#3A86FF;#06FFB4;#FFBE0B;#FF006E;#8338EC" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#3A86FF;stop-opacity:1">
+        <animate attributeName="stop-color" values="#3A86FF;#06FFB4;#FFBE0B;#FF006E;#8338EC;#3A86FF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="75%" style="stop-color:#06FFB4;stop-opacity:1">
+        <animate attributeName="stop-color" values="#06FFB4;#FFBE0B;#FF006E;#8338EC;#3A86FF;#06FFB4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#FFBE0B;stop-opacity:1">
+        <animate attributeName="stop-color" values="#FFBE0B;#FF006E;#8338EC;#3A86FF;#06FFB4;#FFBE0B" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Glass effect gradient -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
+    </linearGradient>
+    
+    <!-- Blur filter for glass effect -->
+    <filter id="glassBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/>
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="holographicGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 3D shadow effect -->
+    <filter id="shadow3D">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Noise texture for glass -->
+    <filter id="noise">
+      <feTurbulence baseFrequency="0.9" numOctaves="4" seed="5"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  
+  <!-- Dark gradient background -->
+  <rect width="200" height="200" fill="url(#darkBg)"/>
+  <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0A0A0A;stop-opacity:1"/>
+    <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1"/>
+  </linearGradient>
+  
+  <!-- Floating particles background -->
+  <g id="particles">
+    <circle cx="30" cy="30" r="1" fill="#FF006E" opacity="0.6">
+      <animate attributeName="cy" values="30;170;30" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="170" r="1" fill="#3A86FF" opacity="0.6">
+      <animate attributeName="cy" values="170;30;170" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="100" r="0.5" fill="#06FFB4" opacity="0.4">
+      <animate attributeName="cx" values="50;150;50" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="50" r="0.5" fill="#FFBE0B" opacity="0.4">
+      <animate attributeName="cx" values="150;50;150" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main glass morphism container -->
+  <g filter="url(#shadow3D)">
+    <!-- Glass background -->
+    <rect x="25" y="25" width="150" height="150" rx="30" ry="30"
+          fill="#FFFFFF" fill-opacity="0.08"
+          stroke="url(#holographic)" stroke-width="1" stroke-opacity="0.5"/>
+    
+    <!-- Glass overlay with noise -->
+    <rect x="25" y="25" width="150" height="150" rx="30" ry="30"
+          fill="url(#glass)" filter="url(#noise)"/>
+    
+    <!-- Inner glass layer -->
+    <rect x="35" y="35" width="130" height="130" rx="25" ry="25"
+          fill="none"
+          stroke="url(#holographic)" stroke-width="0.5" stroke-opacity="0.3"/>
+  </g>
+  
+  <!-- 3D HM Letters with holographic effect -->
+  <g id="hm-3d" filter="url(#holographicGlow)">
+    <!-- H Letter with 3D layers -->
+    <g id="h-3d">
+      <!-- Back layer -->
+      <path d="M 45 65 L 45 135 M 45 100 L 75 100 M 75 65 L 75 135"
+            stroke="#000000" stroke-width="10" stroke-linecap="round"
+            fill="none" opacity="0.2" transform="translate(2, 2)"/>
+      <!-- Middle layer -->
+      <path d="M 45 65 L 45 135 M 45 100 L 75 100 M 75 65 L 75 135"
+            stroke="url(#holographic)" stroke-width="10" stroke-linecap="round"
+            fill="none" opacity="0.5" transform="translate(1, 1)"/>
+      <!-- Front layer -->
+      <path d="M 45 65 L 45 135 M 45 100 L 75 100 M 75 65 L 75 135"
+            stroke="url(#holographic)" stroke-width="10" stroke-linecap="round"
+            fill="none"/>
+    </g>
+    
+    <!-- M Letter with 3D layers -->
+    <g id="m-3d">
+      <!-- Back layer -->
+      <path d="M 95 135 L 95 65 L 110 95 L 125 65 L 125 135 M 125 65 L 140 95 L 155 65 L 155 135"
+            stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+            fill="none" opacity="0.2" transform="translate(2, 2)"/>
+      <!-- Middle layer -->
+      <path d="M 95 135 L 95 65 L 110 95 L 125 65 L 125 135 M 125 65 L 140 95 L 155 65 L 155 135"
+            stroke="url(#holographic)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+            fill="none" opacity="0.5" transform="translate(1, 1)"/>
+      <!-- Front layer -->
+      <path d="M 95 135 L 95 65 L 110 95 L 125 65 L 125 135 M 125 65 L 140 95 L 155 65 L 155 135"
+            stroke="url(#holographic)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+            fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Holographic shine overlay -->
+  <ellipse cx="100" cy="60" rx="70" ry="30" fill="url(#holographic)" opacity="0.15" filter="url(#glassBlur)">
+    <animate attributeName="cy" values="60;140;60" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Corner highlights -->
+  <circle cx="40" cy="40" r="15" fill="url(#holographic)" opacity="0.2" filter="url(#glassBlur)"/>
+  <circle cx="160" cy="160" r="15" fill="url(#holographic)" opacity="0.2" filter="url(#glassBlur)"/>
+  
+  <!-- Subtle grid pattern -->
+  <g id="grid" opacity="0.05">
+    <line x1="25" y1="60" x2="175" y2="60" stroke="url(#holographic)" stroke-width="0.5"/>
+    <line x1="25" y1="100" x2="175" y2="100" stroke="url(#holographic)" stroke-width="0.5"/>
+    <line x1="25" y1="140" x2="175" y2="140" stroke="url(#holographic)" stroke-width="0.5"/>
+    <line x1="60" y1="25" x2="60" y2="175" stroke="url(#holographic)" stroke-width="0.5"/>
+    <line x1="100" y1="25" x2="100" y2="175" stroke="url(#holographic)" stroke-width="0.5"/>
+    <line x1="140" y1="25" x2="140" y2="175" stroke="url(#holographic)" stroke-width="0.5"/>
+  </g>
+</svg>
